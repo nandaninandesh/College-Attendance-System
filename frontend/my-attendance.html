@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Attendance</title>
+    <link rel="stylesheet" href="css/my-attendance.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>My Attendance</h1>
+        <p>View your overall attendance summary</p>
+
+        <div class="summary">
+
+            <div class="card">
+                <h3>Total Classes</h3>
+                <p id="totalClasses">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Present Classes</h3>
+                <p id="presentClasses">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Absent Classes</h3>
+                <p id="absentClasses">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Attendance Percentage</h3>
+                <p id="attendancePercentage">0%</p>
+            </div>
+
+        </div>
+
+        <h2>Attendance Overview</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Total Classes</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+
+            <tbody id="attendanceTableBody">
+                <tr>
+                    <td colspan="5">Loading attendance...</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="js/my-attendance.js"></script>
+
+</body>
+</html>
