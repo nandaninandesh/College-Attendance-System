@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>View Attendance</title>
+
+    <link rel="stylesheet" href="css/attendance.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>View Attendance</h1>
+        <p>College Attendance Management System</p>
+    </header>
+
+    <main>
+
+        <h2>Attendance Records</h2>
+
+        <!-- Attendance Filters -->
+        <section class="filter-container">
+
+            <h3>Filter Attendance</h3>
+
+            <form id="filterForm">
+
+                <label for="attendanceDate">Select Date</label>
+                <input type="date" id="attendanceDate">
+
+                <label for="attendanceSemester">Semester</label>
+                <select id="attendanceSemester">
+                    <option value="">All Semesters</option>
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+                </select>
+
+                <label for="attendanceSubject">Subject</label>
+                <select id="attendanceSubject">
+                    <option value="">All Subjects</option>
+                </select>
+
+                <button type="submit">Apply Filter</button>
+
+            </form>
+
+        </section>
+
+        <!-- Attendance Summary -->
+        <section class="summary-container">
+
+            <div class="summary-card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Present</h3>
+                <p id="presentCount">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Absent</h3>
+                <p id="absentCount">0</p>
+            </div>
+
+        </section>
+
+        <!-- Attendance Table -->
+        <section class="table-container">
+
+            <h3>Attendance Details</h3>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Subject</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="attendanceTableBody">
+                    <!-- Attendance records will appear here -->
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+<script src="js/view-attendance.js"></script>
+</body>
+</html>
