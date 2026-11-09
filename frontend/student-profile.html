@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="css/student-profile.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>My Profile</h1>
+        <p>View and manage your personal information</p>
+
+        <div class="profile-card">
+
+            <div class="profile-header">
+                <div class="profile-avatar">S</div>
+                <h2>Student Profile</h2>
+                <p>Student</p>
+            </div>
+
+            <form id="studentProfileForm">
+
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" value="101" readonly>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" value="Rahul Kumar" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" value="rahul@gmail.com" required>
+
+                <label for="department">Department</label>
+                <input type="text" id="department" value="Computer Science and Engineering" required>
+
+                <label for="semester">Semester</label>
+                <input type="text" id="semester" value="2" readonly>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter phone number">
+
+                <button type="submit">Update Profile</button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </div>
+
+    </div>
+
+    <script src="js/student-profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance Reports</title>
+
+    <link rel="stylesheet" href="css/reports.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Generate Attendance Reports</h1>
+        <p>College Attendance Management System</p>
+    </header>
+
+    <main>
+
+        <h2>Attendance Report Panel</h2>
+
+        <!-- Report Filters -->
+        <section class="filter-container">
+
+            <h3>Generate Report</h3>
+
+            <form id="reportForm">
+
+                <label for="reportType">Report Type</label>
+                <select id="reportType" required>
+                    <option value="">Select Report Type</option>
+                    <option value="daily">Daily Report</option>
+                    <option value="monthly">Monthly Report</option>
+                    <option value="subject">Subject-wise Report</option>
+                </select>
+
+                <label for="reportDate">Select Date</label>
+                <input type="date" id="reportDate">
+
+                <label for="reportMonth">Select Month</label>
+                <input type="month" id="reportMonth">
+
+                <label for="reportSubject">Select Subject</label>
+                <select id="reportSubject">
+                    <option value="">All Subjects</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Computer Organization">Computer Organization</option>
+                    <option value="Web Technology">Web Technology</option>
+                </select>
+
+                <button type="submit">Generate Report</button>
+
+            </form>
+
+        </section>
+
+        <!-- Report Summary -->
+        <section class="summary-container">
+
+            <div class="summary-card">
+                <h3>Total Records</h3>
+                <p id="totalRecords">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Present</h3>
+                <p id="totalPresent">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Absent</h3>
+                <p id="totalAbsent">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Attendance Percentage</h3>
+                <p id="attendancePercentage">0%</p>
+            </div>
+
+        </section>
+
+        <!-- Report Table -->
+        <section class="table-container">
+
+            <h3>Generated Report</h3>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Subject</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="reportTableBody">
+                    <!-- Report records will appear here -->
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+<script src="js/reports.js"></script>
+</body>
+</html>

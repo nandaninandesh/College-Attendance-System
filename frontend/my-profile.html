@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="css/my-profile.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>My Profile</h1>
+        <p>View and manage your personal information</p>
+
+        <div class="profile-card">
+
+            <div class="profile-header">
+                <div class="profile-avatar">T</div>
+                <h2>Teacher Profile</h2>
+                <p>Faculty Member</p>
+            </div>
+
+            <form id="profileForm">
+
+                <label for="teacherId">Teacher ID</label>
+                <input type="text" id="teacherId" value="T001" readonly>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" value="Demo Teacher" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" value="teacher@gmail.com" required>
+
+                <label for="department">Department</label>
+                <input type="text" id="department" value="Computer Science and Engineering" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter phone number">
+
+                <button type="submit">Update Profile</button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </div>
+
+    </div>
+
+    <script src="js/my-profile.js"></script>
+
+</body>
+</html>
