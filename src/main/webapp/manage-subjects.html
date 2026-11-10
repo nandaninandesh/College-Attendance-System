@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Subjects</title>
+
+    <link rel="stylesheet" href="css/manage-subjects.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Manage Subjects</h1>
+        <p>College Attendance Management System</p>
+    </header>
+
+    <main>
+
+        <h2>Subject Management Panel</h2>
+
+        <!-- Add Subject Form -->
+        <section class="form-container">
+
+            <h3>Add New Subject</h3>
+
+            <form id="subjectForm">
+
+                <label for="subjectId">Subject ID</label>
+                <input type="text" id="subjectId"
+                    placeholder="Enter subject ID" required>
+
+                <label for="subjectName">Subject Name</label>
+                <input type="text" id="subjectName"
+                    placeholder="Enter subject name" required>
+
+                <label for="subjectCode">Subject Code</label>
+                <input type="text" id="subjectCode"
+                    placeholder="Enter subject code" required>
+
+                <label for="department">Department</label>
+                <input type="text" id="department"
+                    placeholder="Enter department" required>
+
+                <label for="semester">Semester</label>
+                <select id="semester" required>
+                    <option value="">Select Semester</option>
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+                </select>
+
+                <label for="credits">Credits</label>
+                <input type="number" id="credits"
+                    placeholder="Enter credits" min="1" max="10" required>
+
+                <button type="submit">Add Subject</button>
+
+            </form>
+
+        </section>
+
+        <!-- Subject List -->
+        <section class="table-container">
+
+            <h3>Subject List</h3>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Subject ID</th>
+                        <th>Subject Name</th>
+                        <th>Subject Code</th>
+                        <th>Department</th>
+                        <th>Semester</th>
+                        <th>Credits</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="subjectTableBody">
+                    <!-- Subject records will appear here -->
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+<script src="js/manage-subjects.js"></script>
+</body>
+</html>

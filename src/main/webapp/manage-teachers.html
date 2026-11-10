@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Teachers</title>
+
+    <link rel="stylesheet" href="css/manage-teachers.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Manage Teachers</h1>
+        <p>College Attendance Management System</p>
+    </header>
+
+    <main>
+
+        <h2>Teacher Management Panel</h2>
+
+        <!-- Add Teacher Form -->
+        <section class="form-container">
+
+            <h3>Add New Teacher</h3>
+
+            <form id="teacherForm">
+
+                <label for="teacherId">Teacher ID</label>
+                <input type="text" id="teacherId"
+                    placeholder="Enter teacher ID" required>
+
+                <label for="teacherName">Teacher Name</label>
+                <input type="text" id="teacherName"
+                    placeholder="Enter teacher name" required>
+
+                <label for="teacherEmail">Email Address</label>
+                <input type="email" id="teacherEmail"
+                    placeholder="Enter email address" required>
+
+                <label for="teacherDepartment">Department</label>
+                <input type="text" id="teacherDepartment"
+                    placeholder="Enter department" required>
+
+                <label for="teacherPhone">Phone Number</label>
+                <input type="tel" id="teacherPhone"
+                    placeholder="Enter phone number" required>
+
+                <button type="submit">Add Teacher</button>
+
+            </form>
+
+        </section>
+
+        <!-- Teacher List -->
+        <section class="table-container">
+
+            <h3>Teacher List</h3>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Teacher ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="teacherTableBody">
+                    <!-- Teacher records will appear here -->
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+<script src="js/manage-teachers.js"></script>
+</body>
+</html>

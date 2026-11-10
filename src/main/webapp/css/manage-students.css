@@ -1,0 +1,98 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6fb;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(to right, #243b8a, #5368c5);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+main h2 {
+    color: #243b8a;
+    margin-bottom: 20px;
+}
+
+.form-container,
+.table-container {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+h3 {
+    color: #243b8a;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    align-self: end;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #243b8a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5368c5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #243b8a;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}

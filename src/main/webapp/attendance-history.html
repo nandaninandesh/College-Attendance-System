@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance History</title>
+    <link rel="stylesheet" href="css/attendance-history.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Attendance History</h1>
+        <p>View your previous attendance records</p>
+
+        <div class="filter-section">
+            <label for="subject">Select Subject</label>
+            <select id="subject">
+                <option value="">All Subjects</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Physics">Physics</option>
+                <option value="Computer Organization">Computer Organization</option>
+                <option value="Web Technology">Web Technology</option>
+            </select>
+
+            <label for="attendanceDate">Select Date</label>
+            <input type="date" id="attendanceDate">
+
+            <button type="button" id="filterBtn">Filter Records</button>
+        </div>
+
+        <h2>Previous Attendance Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Subject</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="historyTableBody">
+                <tr>
+                    <td colspan="5">Loading attendance history...</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="js/attendance-history.js"></script>
+
+</body>
+</html>
